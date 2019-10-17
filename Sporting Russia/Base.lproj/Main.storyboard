@@ -1,24 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qXa-DD-E2S">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Новости-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SportsNewsVC" customModule="Спортивная_Россия" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Gro-dn-0pd">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0fT-I5-jsU">
+                                    <size key="itemSize" width="410" height="412"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Iky-oP-QZu" customClass="SportsNewsCell" customModule="Спортивная_Россия" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="0.0" width="410" height="412"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dmw-Xa-X1X">
+                                            <rect key="frame" x="0.0" y="0.0" width="410" height="412"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YbI-bz-sDl">
+                                                    <rect key="frame" x="25" y="16" width="360" height="192"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="192" id="77T-14-ye0"/>
+                                                        <constraint firstAttribute="width" constant="360" id="P7J-gD-nyz"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="07N-Au-C9b">
+                                                    <rect key="frame" x="174" y="216" width="63" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="FdA-2c-TkT"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="w27-O9-1T4"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="YbI-bz-sDl" firstAttribute="centerX" secondItem="dmw-Xa-X1X" secondAttribute="centerX" id="5cf-tr-1ou"/>
+                                                <constraint firstItem="YbI-bz-sDl" firstAttribute="top" secondItem="dmw-Xa-X1X" secondAttribute="topMargin" constant="8" id="8qi-Fs-krw"/>
+                                                <constraint firstItem="07N-Au-C9b" firstAttribute="centerX" secondItem="dmw-Xa-X1X" secondAttribute="centerX" id="Gpg-YY-AWF"/>
+                                                <constraint firstItem="07N-Au-C9b" firstAttribute="top" secondItem="YbI-bz-sDl" secondAttribute="bottom" constant="8" id="H6K-lM-WV0"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="410" height="412"/>
+                                        <connections>
+                                            <outlet property="headerText" destination="07N-Au-C9b" id="2wx-PE-hg5"/>
+                                            <outlet property="imageView" destination="YbI-bz-sDl" id="WAj-TH-c2B"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gro-dn-0pd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="10t-nR-O94"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gro-dn-0pd" secondAttribute="trailing" id="CGH-9t-XaA"/>
+                            <constraint firstItem="Gro-dn-0pd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NXC-5x-EYb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gro-dn-0pd" secondAttribute="bottom" id="PpM-sq-Chj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Новости" image="news" selectedImage="news" id="sqp-m6-F3k"/>
+                    <navigationItem key="navigationItem" id="XoC-j5-IAP"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Gro-dn-0pd" id="A1X-PK-IQd"/>
+                        <segue destination="Flf-Am-ahC" kind="show" identifier="toDescription" id="7xd-jd-Ggm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1900.0000000000002" y="-222.32142857142856"/>
+        </scene>
+        <!--DescriptionVC-->
+        <scene sceneID="Z7e-wG-NLC">
+            <objects>
+                <viewController id="Flf-Am-ahC" customClass="DescriptionVC" customModule="Спортивная_Россия" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3wE-Pz-M4t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iX0-6i-atm">
+                                <rect key="frame" x="20" y="108" width="374" height="191"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="191" id="pSs-4D-S5e"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="CtL-3W-C3T">
+                                <rect key="frame" x="20" y="319" width="374" height="472"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFK-xN-hX4">
+                                <rect key="frame" x="20" y="799" width="374" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="gLE-Va-6py"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                <state key="normal" title="ПОДРОБНЕЕ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="detailsAction:" destination="Flf-Am-ahC" eventType="touchUpInside" id="5E9-bT-rbY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kLd-rV-y1o" firstAttribute="trailing" secondItem="iX0-6i-atm" secondAttribute="trailing" constant="20" id="5Vn-h8-eOf"/>
+                            <constraint firstItem="EFK-xN-hX4" firstAttribute="leading" secondItem="kLd-rV-y1o" secondAttribute="leading" constant="20" id="8Jm-ZH-STU"/>
+                            <constraint firstItem="CtL-3W-C3T" firstAttribute="top" secondItem="iX0-6i-atm" secondAttribute="bottom" constant="20" id="Kkc-gD-ywb"/>
+                            <constraint firstItem="EFK-xN-hX4" firstAttribute="bottom" secondItem="kLd-rV-y1o" secondAttribute="bottom" constant="10" id="MYh-8a-Vsr"/>
+                            <constraint firstItem="iX0-6i-atm" firstAttribute="leading" secondItem="kLd-rV-y1o" secondAttribute="leading" constant="20" id="UFx-5o-XiQ"/>
+                            <constraint firstItem="iX0-6i-atm" firstAttribute="top" secondItem="kLd-rV-y1o" secondAttribute="top" constant="20" id="Y84-qe-3gu"/>
+                            <constraint firstItem="kLd-rV-y1o" firstAttribute="trailing" secondItem="CtL-3W-C3T" secondAttribute="trailing" constant="20" id="cwK-WZ-WYs"/>
+                            <constraint firstItem="CtL-3W-C3T" firstAttribute="leading" secondItem="kLd-rV-y1o" secondAttribute="leading" constant="20" id="kiq-ES-epR"/>
+                            <constraint firstItem="kLd-rV-y1o" firstAttribute="trailing" secondItem="EFK-xN-hX4" secondAttribute="trailing" constant="20" id="myb-8C-ddM"/>
+                            <constraint firstItem="EFK-xN-hX4" firstAttribute="top" secondItem="CtL-3W-C3T" secondAttribute="bottom" constant="8" id="vsh-12-rjU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kLd-rV-y1o"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3ks-7g-WsA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="DTb-EX-SDD">
+                            <connections>
+                                <action selector="sharedAction:" destination="Flf-Am-ahC" id="Kk6-VE-Kxg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="iX0-6i-atm" id="yi2-a3-zaZ"/>
+                        <outlet property="label" destination="CtL-3W-C3T" id="JXk-tU-mjj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdK-Az-0RJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2856.521739130435" y="-558.48214285714278"/>
+        </scene>
+        <!--О нас-->
+        <scene sceneID="glQ-jh-Jju">
+            <objects>
+                <viewController id="4nB-vs-QCJ" customClass="AboutVC" customModule="Спортивная_Россия" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IxU-ai-sfo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Wrw-xp-ed0">
+                                <rect key="frame" x="20" y="108" width="374" height="685"/>
+                                <string key="text">Мы собираем самую актуальную информацию в мире российского спорта с помощьяю сервиса Google News API, за что бесконечно им благодарны. Наш проект некоммерческий и носит исключительно информационный характер на благородных началах. Каждый пользователь может перелючиться на сайт информационного агентства и более подробно изучить новость. Спасибо, что вы с нами!</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LaZ-aS-DAl" firstAttribute="trailing" secondItem="Wrw-xp-ed0" secondAttribute="trailing" constant="20" id="Eat-PE-IA8"/>
+                            <constraint firstItem="Wrw-xp-ed0" firstAttribute="leading" secondItem="LaZ-aS-DAl" secondAttribute="leading" constant="20" id="U4l-xP-H0f"/>
+                            <constraint firstItem="Wrw-xp-ed0" firstAttribute="top" secondItem="LaZ-aS-DAl" secondAttribute="top" constant="20" id="b2N-we-cdk"/>
+                            <constraint firstItem="LaZ-aS-DAl" firstAttribute="bottom" secondItem="Wrw-xp-ed0" secondAttribute="bottom" constant="20" id="fdy-SS-0Yh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LaZ-aS-DAl"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="О нас" image="about" selectedImage="about" id="vHO-at-jJs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UwF-Bb-XDM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2802.898550724638" y="116.51785714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R7E-IO-mMp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qXa-DD-E2S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8mP-k0-KBX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iIy-AA-tmK" kind="relationship" relationship="rootViewController" id="lSt-HY-yuA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="INI-Ya-Ya2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Jo7-Ck-kGG">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="iIy-AA-tmK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="59q-T4-WRk"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oOE-qA-eeb">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Rsi-aK-z0q"/>
+                        <segue destination="4nB-vs-QCJ" kind="relationship" relationship="viewControllers" id="uKp-WJ-yBs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yNd-18-MBP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="115.84821428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="about" width="25" height="25"/>
+        <image name="news" width="25" height="25"/>
+    </resources>
 </document>

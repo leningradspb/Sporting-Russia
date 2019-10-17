@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		265B768F234E1A4C005D51EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B768E234E1A4C005D51EB /* AppDelegate.swift */; };
 		265B7691234E1A4C005D51EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B7690234E1A4C005D51EB /* SceneDelegate.swift */; };
-		265B7693234E1A4C005D51EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B7692234E1A4C005D51EB /* ViewController.swift */; };
+		265B7693234E1A4C005D51EB /* SportsNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B7692234E1A4C005D51EB /* SportsNewsVC.swift */; };
 		265B7696234E1A4C005D51EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265B7694234E1A4C005D51EB /* Main.storyboard */; };
 		265B7698234E1A4F005D51EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 265B7697234E1A4F005D51EB /* Assets.xcassets */; };
 		265B769B234E1A4F005D51EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265B7699234E1A4F005D51EB /* LaunchScreen.storyboard */; };
+		265B76A3234E1DD9005D51EB /* SportsNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B76A2234E1DD9005D51EB /* SportsNewsCell.swift */; };
+		26D0DCD52355F82B00F4A8A2 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0DCD42355F82B00F4A8A2 /* About.swift */; };
+		26D0DCD72355FDB600F4A8A2 /* DescriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0DCD62355FDB500F4A8A2 /* DescriptionVC.swift */; };
+		26E89120234E230300DE1515 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E8911F234E230300DE1515 /* Consts.swift */; };
+		26E89123234E256100DE1515 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E89122234E256100DE1515 /* SearchResponse.swift */; };
+		26E89126234E29A500DE1515 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E89125234E29A500DE1515 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		265B768B234E1A4C005D51EB /* Sporting Russia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sporting Russia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		265B768B234E1A4C005D51EB /* Спортивная Россия.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Спортивная Россия.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		265B768E234E1A4C005D51EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		265B7690234E1A4C005D51EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		265B7692234E1A4C005D51EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		265B7692234E1A4C005D51EB /* SportsNewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsNewsVC.swift; sourceTree = "<group>"; };
 		265B7695234E1A4C005D51EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		265B7697234E1A4F005D51EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		265B769A234E1A4F005D51EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		265B769C234E1A4F005D51EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		265B76A2234E1DD9005D51EB /* SportsNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsNewsCell.swift; sourceTree = "<group>"; };
+		26D0DCD42355F82B00F4A8A2 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		26D0DCD62355FDB500F4A8A2 /* DescriptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionVC.swift; sourceTree = "<group>"; };
+		26E8911F234E230300DE1515 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		26E89122234E256100DE1515 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		26E89125234E29A500DE1515 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +60,7 @@
 		265B768C234E1A4C005D51EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				265B768B234E1A4C005D51EB /* Sporting Russia.app */,
+				265B768B234E1A4C005D51EB /* Спортивная Россия.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,13 +70,51 @@
 			children = (
 				265B768E234E1A4C005D51EB /* AppDelegate.swift */,
 				265B7690234E1A4C005D51EB /* SceneDelegate.swift */,
-				265B7692234E1A4C005D51EB /* ViewController.swift */,
+				265B76A5234E1E0D005D51EB /* Controller */,
+				265B76A4234E1E07005D51EB /* View */,
+				26E89124234E257600DE1515 /* Model */,
+				26E89121234E230800DE1515 /* Helpers */,
 				265B7694234E1A4C005D51EB /* Main.storyboard */,
 				265B7697234E1A4F005D51EB /* Assets.xcassets */,
 				265B7699234E1A4F005D51EB /* LaunchScreen.storyboard */,
 				265B769C234E1A4F005D51EB /* Info.plist */,
 			);
 			path = "Sporting Russia";
+			sourceTree = "<group>";
+		};
+		265B76A4234E1E07005D51EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				265B76A2234E1DD9005D51EB /* SportsNewsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		265B76A5234E1E0D005D51EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				265B7692234E1A4C005D51EB /* SportsNewsVC.swift */,
+				26D0DCD62355FDB500F4A8A2 /* DescriptionVC.swift */,
+				26D0DCD42355F82B00F4A8A2 /* About.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		26E89121234E230800DE1515 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				26E8911F234E230300DE1515 /* Consts.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		26E89124234E257600DE1515 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26E89122234E256100DE1515 /* SearchResponse.swift */,
+				26E89125234E29A500DE1515 /* NetworkService.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +134,7 @@
 			);
 			name = "Sporting Russia";
 			productName = "Sporting Russia";
-			productReference = 265B768B234E1A4C005D51EB /* Sporting Russia.app */;
+			productReference = 265B768B234E1A4C005D51EB /* Спортивная Россия.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,9 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				265B7693234E1A4C005D51EB /* ViewController.swift in Sources */,
+				265B7693234E1A4C005D51EB /* SportsNewsVC.swift in Sources */,
+				26D0DCD72355FDB600F4A8A2 /* DescriptionVC.swift in Sources */,
+				26D0DCD52355F82B00F4A8A2 /* About.swift in Sources */,
+				26E89123234E256100DE1515 /* SearchResponse.swift in Sources */,
+				26E89120234E230300DE1515 /* Consts.swift in Sources */,
 				265B768F234E1A4C005D51EB /* AppDelegate.swift in Sources */,
 				265B7691234E1A4C005D51EB /* SceneDelegate.swift in Sources */,
+				265B76A3234E1DD9005D51EB /* SportsNewsCell.swift in Sources */,
+				26E89126234E29A500DE1515 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,16 +341,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 35U3SKBK64;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = JTDPPGLC64;
 				INFOPLIST_FILE = "Sporting Russia/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Eduard-Siniakov.Sporting-Russia";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Спортивная Россия";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,16 +361,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 35U3SKBK64;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = JTDPPGLC64;
 				INFOPLIST_FILE = "Sporting Russia/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Eduard-Siniakov.Sporting-Russia";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Спортивная Россия";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
