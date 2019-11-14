@@ -15,10 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         UINavigationBar.appearance().tintColor = .white
-        UINavigationBar.appearance().barTintColor = .black
-        UITabBar.appearance().barTintColor = .black
-        UITabBar.appearance().tintColor = .white
-        UITabBar.appearance().unselectedItemTintColor = .gray
+        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0, green: 0.1605580747, blue: 0.4240185022, alpha: 1)
+		
+        UITabBar.appearance().barTintColor = #colorLiteral(red: 0, green: 0.1605580747, blue: 0.4240185022, alpha: 1)
+		UITabBar.appearance().tintColor = #colorLiteral(red: 0.8195309043, green: 0, blue: 0.1600256264, alpha: 1)
+		UITabBar.appearance().unselectedItemTintColor = .white
         
         return true
     }

@@ -22,6 +22,7 @@ struct News: Decodable {
     var url: String?
 }
 
+
 struct Source: Decodable {
     var id: String?
     var name: String?

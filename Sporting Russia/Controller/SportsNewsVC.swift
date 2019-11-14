@@ -33,7 +33,7 @@ class SportsNewsVC: UIViewController {
         collectionView.dataSource = self
         
         let backButton = UIBarButtonItem()
-        backButton.title = "Назад"
+        backButton.title = "Back"
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         
         networkService.request(urlString: urlString) { [weak self] (news) in
@@ -41,7 +41,9 @@ class SportsNewsVC: UIViewController {
                 
             case .success(let searchResponse):
                 self?.searchResponse = searchResponse
+				
                 self?.collectionView.reloadData()
+
             case .failure(let error):
                 print("Ошибка \(error)")
             }
@@ -74,7 +76,7 @@ extension SportsNewsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! SportsNewsCell
-        let news = searchResponse?.articles[indexPath.row]
+		let news = searchResponse?.articles[indexPath.row]
         cell.layer.cornerRadius = 20
         cell.layer.borderWidth  = 5
         cell.layer.borderColor  = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
@@ -110,7 +112,7 @@ extension SportsNewsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! SportsNewsCell
         let news = searchResponse?.articles[indexPath.row]
-        cell.descriptionText = news?.description ?? "Описание у новости отсутствует"
+        cell.descriptionText = news?.description ?? "Description is empty 😱"
         cell.urlStringToShare = (news?.url)!
         dvcImage = cell.imageView.image ?? UIImage(named: "noImage")!
         jsonDescriptionText = cell.descriptionText

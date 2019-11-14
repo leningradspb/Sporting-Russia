@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		265B768B234E1A4C005D51EB /* Спортивная Россия.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Спортивная Россия.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		265B768B234E1A4C005D51EB /* Its my Trump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Its my Trump.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		265B768E234E1A4C005D51EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		265B7690234E1A4C005D51EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		265B7692234E1A4C005D51EB /* SportsNewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsNewsVC.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		265B768C234E1A4C005D51EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				265B768B234E1A4C005D51EB /* Спортивная Россия.app */,
+				265B768B234E1A4C005D51EB /* Its my Trump.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,9 +120,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		265B768A234E1A4C005D51EB /* Sporting Russia */ = {
+		265B768A234E1A4C005D51EB /* Trump */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 265B769F234E1A4F005D51EB /* Build configuration list for PBXNativeTarget "Sporting Russia" */;
+			buildConfigurationList = 265B769F234E1A4F005D51EB /* Build configuration list for PBXNativeTarget "Trump" */;
 			buildPhases = (
 				265B7687234E1A4C005D51EB /* Sources */,
 				265B7688234E1A4C005D51EB /* Frameworks */,
@@ -132,9 +132,9 @@
 			);
 			dependencies = (
 			);
-			name = "Sporting Russia";
+			name = Trump;
 			productName = "Sporting Russia";
-			productReference = 265B768B234E1A4C005D51EB /* Спортивная Россия.app */;
+			productReference = 265B768B234E1A4C005D51EB /* Its my Trump.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -152,7 +152,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 265B7686234E1A4C005D51EB /* Build configuration list for PBXProject "Sporting Russia" */;
+			buildConfigurationList = 265B7686234E1A4C005D51EB /* Build configuration list for PBXProject "Trump" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -165,7 +165,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				265B768A234E1A4C005D51EB /* Sporting Russia */,
+				265B768A234E1A4C005D51EB /* Trump */,
 			);
 		};
 /* End PBXProject section */
@@ -341,16 +341,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JTDPPGLC64;
 				INFOPLIST_FILE = "Sporting Russia/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Eduard-Siniakov.Sporting-Russia";
-				PRODUCT_NAME = "Спортивная Россия";
+				PRODUCT_BUNDLE_IDENTIFIER = "Eduard-Siniakov.Its-my-Trump";
+				PRODUCT_NAME = "Its my Trump";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -361,16 +361,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JTDPPGLC64;
 				INFOPLIST_FILE = "Sporting Russia/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Eduard-Siniakov.Sporting-Russia";
-				PRODUCT_NAME = "Спортивная Россия";
+				PRODUCT_BUNDLE_IDENTIFIER = "Eduard-Siniakov.Its-my-Trump";
+				PRODUCT_NAME = "Its my Trump";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -379,7 +379,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		265B7686234E1A4C005D51EB /* Build configuration list for PBXProject "Sporting Russia" */ = {
+		265B7686234E1A4C005D51EB /* Build configuration list for PBXProject "Trump" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				265B769D234E1A4F005D51EB /* Debug */,
@@ -388,7 +388,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		265B769F234E1A4F005D51EB /* Build configuration list for PBXNativeTarget "Sporting Russia" */ = {
+		265B769F234E1A4F005D51EB /* Build configuration list for PBXNativeTarget "Trump" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				265B76A0234E1A4F005D51EB /* Debug */,

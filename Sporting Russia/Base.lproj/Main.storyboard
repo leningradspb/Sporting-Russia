@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Новости-->
+        <!--News-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SportsNewsVC" customModule="Спортивная_Россия" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SportsNewsVC" customModule="Its_my_Trump" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Iky-oP-QZu" customClass="SportsNewsCell" customModule="Спортивная_Россия" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Iky-oP-QZu" customClass="SportsNewsCell" customModule="Its_my_Trump" customModuleProvider="target">
                                         <rect key="frame" x="2" y="0.0" width="410" height="412"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dmw-Xa-X1X">
@@ -42,13 +42,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="07N-Au-C9b">
-                                                    <rect key="frame" x="174" y="216" width="63" height="33"/>
+                                                    <rect key="frame" x="173.5" y="216" width="63.5" height="33"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="FdA-2c-TkT"/>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="w27-O9-1T4"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -60,7 +60,7 @@
                                                 <constraint firstItem="07N-Au-C9b" firstAttribute="top" secondItem="YbI-bz-sDl" secondAttribute="bottom" constant="8" id="H6K-lM-WV0"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.0" green="0.15686274510000001" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <size key="customSize" width="410" height="412"/>
                                         <connections>
                                             <outlet property="headerText" destination="07N-Au-C9b" id="2wx-PE-hg5"/>
@@ -70,7 +70,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Gro-dn-0pd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="10t-nR-O94"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gro-dn-0pd" secondAttribute="trailing" id="CGH-9t-XaA"/>
@@ -79,7 +79,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Новости" image="news" selectedImage="news" id="sqp-m6-F3k"/>
+                    <tabBarItem key="tabBarItem" title="News" image="news" selectedImage="news" id="sqp-m6-F3k"/>
                     <navigationItem key="navigationItem" id="XoC-j5-IAP"/>
                     <connections>
                         <outlet property="collectionView" destination="Gro-dn-0pd" id="A1X-PK-IQd"/>
@@ -93,7 +93,7 @@
         <!--DescriptionVC-->
         <scene sceneID="Z7e-wG-NLC">
             <objects>
-                <viewController id="Flf-Am-ahC" customClass="DescriptionVC" customModule="Спортивная_Россия" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Flf-Am-ahC" customClass="DescriptionVC" customModule="Its_my_Trump" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3wE-Pz-M4t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,15 +116,15 @@
                                     <constraint firstAttribute="height" constant="73" id="gLE-Va-6py"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
-                                <state key="normal" title="ПОДРОБНЕЕ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="MORE">
+                                    <color key="titleColor" red="0.74901960779999999" green="0.039215686270000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="detailsAction:" destination="Flf-Am-ahC" eventType="touchUpInside" id="5E9-bT-rbY"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.15686274510000001" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="kLd-rV-y1o" firstAttribute="trailing" secondItem="iX0-6i-atm" secondAttribute="trailing" constant="20" id="5Vn-h8-eOf"/>
                             <constraint firstItem="EFK-xN-hX4" firstAttribute="leading" secondItem="kLd-rV-y1o" secondAttribute="leading" constant="20" id="8Jm-ZH-STU"/>
@@ -155,23 +155,23 @@
             </objects>
             <point key="canvasLocation" x="2856.521739130435" y="-558.48214285714278"/>
         </scene>
-        <!--О нас-->
+        <!--About us-->
         <scene sceneID="glQ-jh-Jju">
             <objects>
-                <viewController id="4nB-vs-QCJ" customClass="AboutVC" customModule="Спортивная_Россия" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4nB-vs-QCJ" customClass="AboutVC" customModule="Its_my_Trump" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IxU-ai-sfo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Wrw-xp-ed0">
                                 <rect key="frame" x="20" y="108" width="374" height="685"/>
-                                <string key="text">Мы собираем самую актуальную информацию в мире российского спорта с помощьяю сервиса Google News API, за что бесконечно им благодарны. Наш проект некоммерческий и носит исключительно информационный характер на благородных началах. Каждый пользователь может перелючиться на сайт информационного агентства и более подробно изучить новость. Спасибо, что вы с нами!</string>
+                                <string key="text">We collect the most up-to-date information in the world about our beloved Donald Trump using the Google News API service, for which we are eternally grateful. Our project is non-commercial and is exclusively informational in nature on a noble basis. Each user can switch to the website of the news Agency and learn more about the news. Thank you for being with us!</string>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.15686274510000001" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="LaZ-aS-DAl" firstAttribute="trailing" secondItem="Wrw-xp-ed0" secondAttribute="trailing" constant="20" id="Eat-PE-IA8"/>
                             <constraint firstItem="Wrw-xp-ed0" firstAttribute="leading" secondItem="LaZ-aS-DAl" secondAttribute="leading" constant="20" id="U4l-xP-H0f"/>
@@ -180,7 +180,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LaZ-aS-DAl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="О нас" image="about" selectedImage="about" id="vHO-at-jJs"/>
+                    <tabBarItem key="tabBarItem" title="About us" image="about" selectedImage="about" id="vHO-at-jJs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwF-Bb-XDM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -204,12 +204,12 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--It's my Trump-->
         <scene sceneID="Jo7-Ck-kGG">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="iIy-AA-tmK" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="59q-T4-WRk"/>
+                    <navigationItem key="navigationItem" title="It's my Trump" id="59q-T4-WRk"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oOE-qA-eeb">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
